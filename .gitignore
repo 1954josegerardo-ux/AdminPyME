@@ -1,0 +1,39 @@
+# Base de datos (no subir datos reales)
+adminpyme.db
+*.db
+
+# Entorno virtual
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Archivos sensibles
+.env
+api.txt
+contraseña*.txt
+
+# Archivos generados
+resultados_temp.xlsx
+tickets_analizados*.xlsx
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
