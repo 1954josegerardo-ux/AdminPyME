@@ -1,5 +1,13 @@
 # 📦 AdminPyME - Sistema de Gestión para PYMES
+## 🌐 Demo en vivo
 
+Prueba AdminPyME sin instalar nada:
+
+**👉 [https://apppyme-jbncydxxlcu7ue9tdq4mdu.streamlit.app](https://apppyme-jbncydxxlcu7ue9tdq4mdu.streamlit.app)**
+
+> ℹ️ Demo pública con datos de prueba. Para uso real, descarga el código y ejecútalo localmente.
+
+**🔐 Código de administrador por defecto:** `Admin`
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.40+-red.svg)](https://streamlit.io/)
 [![SQLite](https://img.shields.io/badge/SQLite-3-green.svg)](https://www.sqlite.org/)
