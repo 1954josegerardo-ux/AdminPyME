@@ -257,7 +257,26 @@ def insertar_datos_ejemplo():
         conn.commit()
     conn.close()
 
-if __name__ == "__main__":
+def inicializar_si_vacia():
+    """Crea las tablas y configuración mínima si la base está vacía."""
     crear_tablas()
-    insertar_datos_ejemplo()
-    print("Base de datos lista")
+
+    conn = conectar()
+    cursor = conn.cursor()
+
+    # Verificar si hay configuración
+    cursor.execute("SELECT COUNT(*) FROM configuracion")
+    if cursor.fetchone()[0] == 0:
+        cursor.execute("""
+        INSERT INTO configuracion 
+        (nombre_negocio, codigo_admin, numero_factura_inicial, numero_factura_actual)
+        VALUES ('AdminPyME Demo', 'Admin', 1, 0)
+        """)
+        conn.commit()
+        print("✅ Configuración inicial creada")
+
+    conn.close()
+    print("✅ Base de datos inicializada")
+
+if __name__ == "__main__":
+    inicializar_si_vacia()

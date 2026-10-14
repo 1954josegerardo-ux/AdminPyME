@@ -12,7 +12,7 @@ st.set_page_config(
 
 # ==================== INICIALIZAR BASE DE DATOS ====================
 
-db.crear_tablas()
+db.inicializar_si_vacia()
 
 # Garantizar que exista una configuración por defecto con código Admin
 conn = db.conectar()
